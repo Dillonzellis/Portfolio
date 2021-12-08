@@ -1,0 +1,14 @@
+.projects {
+  height: 100vh;
+  background-color: aquamarine;
+
+  .projects-card-deck {
+    display: flex;
+    // css grid?
+    .projects-card {
+      width: 362px;
+      height: 313px;
+      border: solid black;
+    }
+  }
+}

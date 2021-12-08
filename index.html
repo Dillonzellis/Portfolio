@@ -8,8 +8,9 @@
 
     <title>Dillon Ellis | Developer</title>
   </head>
+
   <body>
-    <div class="home">
+    <div class="home" id="home">
       <div class="name-container">
         <h2 class="sub-heading">DZ DESIGNS</h2>
         <h1 class="heading">Dillon Ellis</h1>
@@ -20,12 +21,12 @@
         </div>
       </div>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
       <nav>
-        <div class="nav-link">HOME</div>
-        <div class="nav-link">SKILLS</div>
-        <div class="nav-link">PROJECTS</div>
-        <div class="nav-link">CONTACT</div>
+        <div class="nav-link"><a href="#home">HOME</a></div>
+        <div class="nav-link"><a href="#skills">SKILLS</a></div>
+        <div class="nav-link"><a href="#projects">PROJECTS</a></div>
+        <div class="nav-link"><a href="#contact">CONTACT</a></div>
       </nav>
       <div class="bio-container">
         <h2 class="bio-header">Creative Solutions to Complex Problems.</h2>
@@ -72,6 +73,31 @@
           <div class="tool-item">Elementor</div>
           <div class="tool-item">Wix/Weebly</div>
         </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <h2 class="projects-header">My Recent Work</h2>
+      <div class="projects-card-deck">
+        <div class="projects-card"></div>
+        <div class="projects-card"></div>
+        <div class="projects-card"></div>
+        <div class="projects-card"></div>
+      </div>
+      <div class="projects-sub-header">More on my (Github Icon)</div>
+    </div>
+    <div class="contact" id="contact">
+      <h2 class="contact-header">CONTACT</h2>
+      <div class="contact-form">
+        <h3 class="form-header">
+          Let's Build your passion and make it a reality!
+        </h3>
+        <input type="text" />
+        <label for="">Name</label>
+        <input type="email" name="" id="" />
+        <label for="">Email</label>
+        <input type="text" name="" id="" />
+        <label for="">Message</label>
+        <button type="submit">Let's Do This!</button>
       </div>
     </div>
     <script defer src="./dist/main.js"></script>
