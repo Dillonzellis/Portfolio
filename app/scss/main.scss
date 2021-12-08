@@ -1,6 +1,10 @@
-@import "./partials/normalize";
-@import "./partials/config.scss";
-@import "./partials/home.scss";
-@import "./partials/skills.scss";
-@import "./partials/projects.scss";
-@import "./partials/contact.scss";
+// Utility
+@import "./utility/normalize";
+@import "./utility/config.scss";
+@import "./utility/nav.scss";
+
+// Pages
+@import "./pages/home";
+@import "./pages/skills";
+@import "./pages/projects";
+@import "./pages/contact";
