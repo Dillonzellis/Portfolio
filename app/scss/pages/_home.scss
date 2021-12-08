@@ -41,4 +41,13 @@
       margin-top: 1rem;
     }
   }
+  .down-arrow {
+    align-self: flex-end;
+    position: relative;
+    left: 269px;
+    height: 79px;
+    width: 129px;
+    background-color: $secondary-color;
+    color: white;
+  }
 }
