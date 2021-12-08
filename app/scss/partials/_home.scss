@@ -1,0 +1,44 @@
+.home {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../../../img/bg.jpg);
+  background-color: $primary-color;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center bottom;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .name-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sub-heading {
+      color: $secondary-font-color;
+      //   font-family: $primary-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+      margin-bottom: 0;
+    }
+
+    .heading {
+      //   font-family: Amita;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 186px;
+      margin-bottom: 0;
+    }
+
+    .icons-container {
+      margin-top: 1rem;
+    }
+  }
+}
