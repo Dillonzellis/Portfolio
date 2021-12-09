@@ -1,5 +1,47 @@
 .skills-container {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100%;
   background-color: $tertiary-color;
+  padding-top: 40px;
+  font-family: $primary-font;
+
+  .skills-spacer {
+    height: 40px;
+  }
+
+  .spacer-height {
+    height: 500px;
+  }
+
+  .skills-gradient-bg {
+    // padding-top: 40px;
+    background: linear-gradient(179.9deg, #252934 49.99%, #04c2c9 216.47%);
+    border-radius: 26px 26px 0px 0px;
+
+    .bio-container {
+      color: $tertiary-color;
+      text-align: center;
+
+      .bio-header {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.06em;
+        padding-top: 26px;
+      }
+      .bio-sub-header {
+        color: #c9c9c9;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        // padding-top: 47px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }

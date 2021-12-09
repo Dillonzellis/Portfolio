@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/main.css" />
 
     <title>Dillon Ellis | Developer</title>
@@ -26,92 +29,99 @@
       </div>
       <button class="down-arrow"><a href="#skills">Down arrow</a></button>
     </section>
+
     <!-- NAVBAR -->
-    <nav id="navbar">
-      <ul>
-        <li class="nav-link"><a href="#home">HOME</a></li>
-        <li class="nav-link"><a href="#skills">SKILLS</a></li>
-        <li class="nav-link"><a href="#projects">PROJECTS</a></li>
-        <li class="nav-link"><a href="#contact">CONTACT</a></li>
-      </ul>
-      .
-    </nav>
-    <!-- SKILLS -->
-    <section class="skills-container" id="skills">
-      <div class="bio-container">
-        <h2 class="bio-header">Creative Solutions to Complex Problems.</h2>
-        <h3 class="bio-sub-header">
-          I design desktop & mobile friendly websites for e-commerce sites,
-          small business services, personal projects, and everything in between.
-        </h3>
-      </div>
-      <div class="tools-container">
-        <h2 class="tools-header">TOOLS & TECHNOLOGIES</h2>
-        <div class="tools-icon-container">
-          <div class="tool-icon">JS</div>
-          <div class="tool-icon">CCS3</div>
-          <div class="tool-icon">SASS</div>
-          <div class="tool-icon">NODE</div>
-          <div class="tool-icon">MONGO</div>
-          <div class="tool-icon">PHP</div>
-          <div class="tool-icon">MYSQL</div>
-          <div class="tool-icon">HTML5</div>
+    <div class="sticky-nav">
+      <nav id="navbar">
+        <ul>
+          <li class="nav-link"><a href="#home">HOME</a></li>
+          <li class="nav-link"><a href="#skills">SKILLS</a></li>
+          <li class="nav-link"><a href="#projects">PROJECTS</a></li>
+          <li class="nav-link"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- SKILLS -->
+      <section class="skills-container" id="skills">
+        <div class="skills-spacer"></div>
+        <div class="skills-gradient-bg">
+          <div class="bio-container">
+            <h2 class="bio-header">Creative Solutions to Complex Problems.</h2>
+            <h3 class="bio-sub-header">
+              I design desktop & mobile friendly websites for e-commerce sites,
+              small business services, personal projects, and everything in
+              between.
+            </h3>
+          </div>
+          <div class="tools-container">
+            <h2 class="tools-header">TOOLS & TECHNOLOGIES</h2>
+            <div class="tools-icon-container">
+              <div class="tool-icon">JS</div>
+              <div class="tool-icon">CCS3</div>
+              <div class="tool-icon">SASS</div>
+              <div class="tool-icon">NODE</div>
+              <div class="tool-icon">MONGO</div>
+              <div class="tool-icon">PHP</div>
+              <div class="tool-icon">MYSQL</div>
+              <div class="tool-icon">HTML5</div>
+            </div>
+          </div>
+          <div class="tools-card-deck">
+            <div class="tools-card">
+              <h3 class="tool-header">LIBRARIES/FRAMEWORKS</h3>
+              <div class="tool-item">Bootstrap</div>
+              <div class="tool-item">jQuery</div>
+              <div class="tool-item">Express</div>
+              <div class="tool-item">Mongoose</div>
+              <div class="tool-item">EJS</div>
+            </div>
+            <div class="tools-card">
+              <h3 class="tool-header">DEV TOOLS</h3>
+              <div class="tool-item">Git/Github</div>
+              <div class="tool-item">Gulp</div>
+              <div class="tool-item">NPM/Yarn</div>
+              <div class="tool-item">Figma</div>
+              <div class="tool-item">VSCode</div>
+            </div>
+            <div class="tools-card">
+              <h3 class="tool-header">CMS</h3>
+              <div class="tool-item">Custom Wordpress</div>
+              <div class="tool-item">Woocommerce</div>
+              <div class="tool-item">Understrap</div>
+              <div class="tool-item">Elementor</div>
+              <div class="tool-item">Wix/Weebly</div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="tools-card-deck">
-        <div class="tools-card">
-          <h3 class="tool-header">LIBRARIES/FRAMEWORKS</h3>
-          <div class="tool-item">Bootstrap</div>
-          <div class="tool-item">jQuery</div>
-          <div class="tool-item">Express</div>
-          <div class="tool-item">Mongoose</div>
-          <div class="tool-item">EJS</div>
+      </section>
+      <!-- PROJECTS -->
+      <section class="projects-container" id="projects">
+        <h2 class="projects-header">My Recent Work</h2>
+        <div class="projects-card-deck">
+          <div class="projects-card"></div>
+          <div class="projects-card"></div>
+          <div class="projects-card"></div>
+          <div class="projects-card"></div>
         </div>
-        <div class="tools-card">
-          <h3 class="tool-header">DEV TOOLS</h3>
-          <div class="tool-item">Git/Github</div>
-          <div class="tool-item">Gulp</div>
-          <div class="tool-item">NPM/Yarn</div>
-          <div class="tool-item">Figma</div>
-          <div class="tool-item">VSCode</div>
+        <div class="projects-sub-header">More on my (Github Icon)</div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact-container" id="contact">
+        <h2 class="contact-header">CONTACT</h2>
+        <div class="contact-form">
+          <h3 class="form-header">
+            Let's Build your passion and make it a reality!
+          </h3>
+          <input type="text" />
+          <label for="">Name</label>
+          <input type="email" name="" id="" />
+          <label for="">Email</label>
+          <input type="text" name="" id="" />
+          <label for="">Message</label>
+          <button type="submit">Let's Do This!</button>
         </div>
-        <div class="tools-card">
-          <h3 class="tool-header">CMS</h3>
-          <div class="tool-item">Custom Wordpress</div>
-          <div class="tool-item">Woocommerce</div>
-          <div class="tool-item">Understrap</div>
-          <div class="tool-item">Elementor</div>
-          <div class="tool-item">Wix/Weebly</div>
-        </div>
-      </div>
-    </section>
-    <!-- PROJECTS -->
-    <section class="projects-container" id="projects">
-      <h2 class="projects-header">My Recent Work</h2>
-      <div class="projects-card-deck">
-        <div class="projects-card"></div>
-        <div class="projects-card"></div>
-        <div class="projects-card"></div>
-        <div class="projects-card"></div>
-      </div>
-      <div class="projects-sub-header">More on my (Github Icon)</div>
-    </section>
-    <!-- CONTACT -->
-    <section class="contact-container" id="contact">
-      <h2 class="contact-header">CONTACT</h2>
-      <div class="contact-form">
-        <h3 class="form-header">
-          Let's Build your passion and make it a reality!
-        </h3>
-        <input type="text" />
-        <label for="">Name</label>
-        <input type="email" name="" id="" />
-        <label for="">Email</label>
-        <input type="text" name="" id="" />
-        <label for="">Message</label>
-        <button type="submit">Let's Do This!</button>
-      </div>
-    </section>
+      </section>
+    </div>
+
     <script defer src="./dist/main.js"></script>
   </body>
 </html>
