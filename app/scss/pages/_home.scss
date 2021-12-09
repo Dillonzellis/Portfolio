@@ -42,9 +42,10 @@
     }
   }
   .down-arrow {
+    display: inline-block;
     align-self: flex-end;
-    position: relative;
-    left: 269px;
+    position: absolute;
+    left: 82%;
     height: 79px;
     width: 129px;
     background-color: $secondary-color;

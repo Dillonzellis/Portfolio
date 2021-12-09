@@ -1,5 +1,3 @@
-console.log("yeppers");
-
 // Sticky Nav
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
