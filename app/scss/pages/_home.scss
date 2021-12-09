@@ -19,7 +19,7 @@
 
     .sub-heading {
       color: $secondary-font-color;
-      //   font-family: $primary-font;
+      font-family: $primary-font;
       font-style: normal;
       font-weight: normal;
       font-size: 1.5rem;
@@ -29,7 +29,7 @@
     }
 
     .heading {
-      //   font-family: Amita;
+      font-family: $secondary-font;
       font-style: normal;
       font-weight: bold;
       font-size: 6rem;
