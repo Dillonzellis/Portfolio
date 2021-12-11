@@ -1,24 +1,16 @@
 .skills-container {
-  // min-height: 100vh;
+  height: 90vh;
   max-width: 100%;
   background-color: $tertiary-color;
   padding-top: 40px;
   font-family: $primary-font;
 
-  .skills-spacer {
-    // height: 40px;
-  }
-
-  .spacer-height {
-    height: 500px;
-  }
-
   .skills-gradient-bg {
     // padding-top: 40px;
     background: linear-gradient(179.9deg, #252934 49.99%, #04c2c9 216.47%);
     border-radius: 26px 26px 0px 0px;
-    // height: 100%;
-    height: 855px;
+    height: 100%;
+    // height: 855px;
 
     .bio-container {
       color: $tertiary-color;
@@ -87,13 +79,11 @@
 
       .tools-card-deck {
         display: flex;
-        justify-content: center;
-      
-    
+        justify-content: space-evenly;
+
         .tools-card {
           width: 322px;
-          // height: 447px;
-  
+          height: 447px;
 
           background-color: white;
           text-align: center;
