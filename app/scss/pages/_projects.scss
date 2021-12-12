@@ -10,6 +10,7 @@
 
   .projects-wrapper {
     padding-top: 50px;
+
     .projects-header {
       text-align: center;
       font-family: $primary-font;
@@ -23,12 +24,20 @@
       letter-spacing: 0.06em;
     }
     .projects-card-deck {
-      display: flex;
       // css grid?
+
+      display: flex;
+      width: 900px;
+      flex-wrap: wrap;
+      margin: auto;
+
       .projects-card {
         width: 362px;
         height: 313px;
-        border: solid black;
+        z-index: 3;
+        margin-right: 75px;
+        margin-bottom: 53px;
+        background-color: rgb(116, 116, 116);
       }
     }
     .projects-sub-header {
@@ -43,8 +52,10 @@
     }
   }
   .projects-gradient {
-    // position: absolute;
-    // height: 712.61px;
+    position: absolute;
+    height: 781.61px;
+    width: 100%;
+
     // left: -1560px;
     // top: 345.39px;
     // bottom: 0;
@@ -52,12 +63,15 @@
     // background: linear-gradient(261.91deg, #252934 40.05%, #04c2c9 66.36%);
     // border: 1px solid #000000;
     background-image: url(../../../img/projects-vector.png);
-    // background-size: cover;
+    background-size: cover;
+    // background-size: auto;
     // width: 100%;
     // height: 100%;
     // z-index: 999;
 
-    height: 500px;
+    // height: 500px;
+    // width: 100%;
     bottom: 0;
+    // right: 0;
   }
 }
