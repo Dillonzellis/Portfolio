@@ -25,19 +25,27 @@
     }
     .projects-card-deck {
       // css grid?
+      // cards are not centered. Right set's right border is on center
+      // display: flex;
+      // justify-content: center;
+      // width: 900px;
+      // flex-wrap: wrap;
+      // margin: auto;
 
-      display: flex;
-      width: 900px;
-      flex-wrap: wrap;
-      margin: auto;
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-gap: 10px;
 
       .projects-card {
-        width: 362px;
-        height: 313px;
+        // width: 362px;
+        // height: 313px;
         z-index: 3;
-        margin-right: 75px;
-        margin-bottom: 53px;
+        // margin-right: 75px;
+
         background-color: rgb(116, 116, 116);
+      }
+      .top {
+        // margin-bottom: 53px;
       }
     }
     .projects-sub-header {
@@ -47,8 +55,13 @@
       font-size: 16px;
       line-height: 20px;
       letter-spacing: 0.06em;
-
-      color: $tertiary-color;
+      // text-align: center;
+      z-index: 3;
+      position: relative;
+      width: 100%;
+      color: red;
+      display: flex;
+      justify-content: center;
     }
   }
   .projects-gradient {
