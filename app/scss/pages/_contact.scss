@@ -1,17 +1,56 @@
 .contact-container {
   height: 100vh;
+  position: relative;
 
-  .contact-header {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    letter-spacing: 0.2em;
-    text-align: center;
+  .contact-vector {
+    background-image: url(../../../img/contact-bg.png);
+    background-size: cover;
+    position: absolute;
+    // bottom: 0;
+    top: 245px;
+    width: 100%;
+    height: 74vh;
 
-    margin-top: 300px;
+    .contact-header {
+      font-family: $primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      letter-spacing: 0.2em;
+      text-align: center;
 
-    color: $accent-color;
+      // padding-top: 300px;
+
+      color: $accent-color;
+    }
+
+    .contact-form {
+      margin-top: 170px;
+      display: flex;
+      flex-direction: column;
+
+      .form-header {
+        height: 29px;
+
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.06em;
+
+        text-align: center;
+
+        color: #f5f5f5;
+      }
+
+      input {
+        width: 269px;
+      }
+      label {
+        color: #f5f5f5;
+      }
+    }
   }
 }
