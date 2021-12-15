@@ -9,7 +9,7 @@
   }
 
   .projects-wrapper {
-    padding-top: 50px;
+    padding-top: 35px;
 
     .projects-header {
       text-align: center;
@@ -33,18 +33,19 @@
       // margin: auto;
 
       display: grid;
-      grid-template-columns: 362px 362px 362px 362px;
+      grid-template-columns: 362px 362px;
       grid-gap: 4.5rem;
       justify-content: center;
 
       .projects-card {
         width: 362px;
-        height: 313px;
+        height: 290px;
         // z-index: 3;
         // margin-right: 75px;
         border: solid 1px black;
 
         background-color: rgb(116, 116, 116);
+        z-index: 3;
       }
       .top {
         // margin-bottom: 53px;
@@ -61,10 +62,11 @@
       z-index: 3;
       position: relative;
       width: 100%;
-      color: black;
+      color: #f5f5f5;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 1rem;
     }
   }
   .projects-gradient {
