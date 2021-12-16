@@ -7,9 +7,9 @@
     background-size: cover;
     position: absolute;
     // bottom: 0;
-    top: 245px;
+    top: 150px;
     width: 100%;
-    height: 74vh;
+    height: 84.5vh;
 
     .contact-header {
       font-family: $primary-font;
@@ -20,36 +20,91 @@
       letter-spacing: 0.2em;
       text-align: center;
 
-      // padding-top: 300px;
+      margin-top: 5.5rem;
 
       color: $accent-color;
     }
+    .form-header {
+      height: 29px;
+      margin-top: 9rem;
+      margin-bottom: 4.5rem;
+      font-family: $primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.06em;
+
+      text-align: center;
+
+      color: #f5f5f5;
+    }
 
     .contact-form {
-      margin-top: 170px;
-      display: flex;
-      flex-direction: column;
+      width: 580px;
 
-      .form-header {
-        height: 29px;
+      margin-left: auto;
+      margin-right: auto;
 
-        font-family: $primary-font;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
-        letter-spacing: 0.06em;
+      // justify-content: center;
+      // text-align: center;
 
-        text-align: center;
+      // flex-direction: column;
 
-        color: #f5f5f5;
+      .inputs-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        // width: 750px;
+
+        .input-wrapper {
+          display: flex;
+          flex-direction: column;
+          .label-mb {
+            margin-bottom: 0.5rem;
+          }
+        }
+        .grid-col-span-2 {
+          grid-column: span 2;
+        }
+        // input {
+        //   // width: 269px;
+        //   height: 1.5rem;
+        // }
+        input[type="text"] {
+          font-size: 1.25rem;
+          font-family: $primary-font;
+        }
+        input[type="email"] {
+          font-size: 1.25rem;
+          font-family: $primary-font;
+        }
+        textarea {
+          font-size: 1.25rem;
+          font-family: $primary-font;
+        }
+        label {
+          font-family: $primary-font;
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.25rem;
+          line-height: 20px;
+          /* identical to box height */
+
+          letter-spacing: 0.06em;
+
+          color: #f5f5f5;
+        }
       }
-
-      input {
-        width: 269px;
-      }
-      label {
-        color: #f5f5f5;
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        .btn {
+          // margin-right: auto;
+          // margin-left: auto;
+          margin-top: 2rem;
+        }
       }
     }
   }
