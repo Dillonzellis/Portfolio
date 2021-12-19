@@ -168,31 +168,47 @@
             <h3 class="form-header">
               Let's Build your passion and make it a reality!
             </h3>
-            <form class="contact-form">
+
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/0e618ea3ad46cce329d69e9596f8b4b3"
+              method="POST"
+            >
               <div class="inputs-grid">
                 <div class="input-wrapper">
                   <label for="" class="label-mb">Name</label>
-                  <input type="text" / class="">
+                  <input type="text" class="" name="name" />
                 </div>
                 <div class="input-wrapper">
                   <label for="" class="label-mb">Email</label>
-                  <input type="email" name="" id="" />
+                  <input type="email" name="email" id="" />
                 </div>
                 <div class="input-wrapper grid-col-span-2">
                   <label for="" class="label-mb">Message</label>
-                  <textarea name="" id="" class="" rows="5"></textarea>
+                  <textarea name="message" id="" class="" rows="5"></textarea>
                 </div>
               </div>
+              <!-- <input
+                type="hidden"
+                name="_next"
+                value="localhost:3000/thankyou.html"
+              /> -->
               <div class="btn-wrapper">
                 <button type="submit" class="btn">Let's Do This!</button>
               </div>
             </form>
           </div>
           <footer>
-            Created by Dillon Ellis &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
+            <div class="footer">
+              Created by Dillon Ellis &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              <!-- <a href="mailto:dillonzellis@gmail.com"
+                ><img src="./img/icons/mail.png" class="ml1" alt="" srcset=""
+              /></a> -->
+            </div>
+            <!-- Created by Dillon Ellis &copy; -->
           </footer>
         </section>
       </div>

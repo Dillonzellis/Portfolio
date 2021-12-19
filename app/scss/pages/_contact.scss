@@ -119,5 +119,10 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
