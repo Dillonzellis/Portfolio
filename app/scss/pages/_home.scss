@@ -1,0 +1,44 @@
+.home {
+  min-height: 500px;
+  position: relative;
+  // background-color: $primary-color;
+  background-image: url(../../../img/finalbg.png);
+  background-size: cover;
+
+  color: $tertiary-color;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // align-content: center;
+
+
+  .name-container {
+    font-family: $secondary-font;
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+    letter-spacing: 4px;
+    z-index: 3;
+    .heading {
+      // margin-top: 1rem;
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    .sub-heading {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .icons-container {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  }
+  .down-arrow {
+    align-self: flex-end;
+    margin-right: 1rem;
+    z-index: 3;
+  }
+}
