@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./dist/main.css" />
 
     <title>Dillon Ellis | Developer</title>
 
@@ -19,204 +19,63 @@
 
   <body>
     <main>
-      <div class="stars"></div>
-      <div class="twinkling"></div>
-      <!-- HOME -->
-      <section class="home-container" id="home">
-        <!-- <div class="stars"></div>
-      <div class="twinkling"></div> -->
-
+      <header>
+    <!-- NAVBAR -->
+        <div class="sticky-nav" id="skills">
+          <nav id="navbar">
+            <ul>
+              <li class="nav-link"><a href="#home">HOME</a></li>
+              <li class="nav-link"><a href="#skills">SKILLS</a></li>
+              <li class="nav-link"><a href="#projects">PROJECTS</a></li>
+              <li class="nav-link"><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+      </header>
+    <!-- HOME -->
+      <section class="home" id ="home">
         <div class="name-container">
           <h2 class="sub-heading">DZ DESIGNS</h2>
           <h1 class="heading">Dillon Ellis</h1>
           <h2 class="sub-heading">FULL STACK DEVELOPER</h2>
           <div class="icons-container">
-            <button class="mr2">
-              <a href="./resume.pdf" target="_blank" rel="noopener noreferrer"
-                >RESUME</a
-              >
+            <button class="">
+              <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
             </button>
 
-            <a href="https://github.com/Dillonzellis" target="_blank"
-              ><img
+            <a href="https://github.com/Dillonzellis" target="_blank"> 
+              <img
                 src="./img/icons/GitHub-Mark-Light-64px.png"
                 alt=""
                 srcset=""
-            /></a>
-            <!-- <span>GITHUB ICON</span> -->
+              />
+            </a>
           </div>
         </div>
         <button class="down-arrow slide-top">
           <a href="#skills"
-            ><img class="bounce" src="./img/down-ar.png" alt="" srcset=""
-          /></a>
+            ><img class="bounce" src="./img/down-ar.png" alt="" srcset=""/>
+          </a>
         </button>
       </section>
 
-      <!-- NAVBAR -->
-      <div class="sticky-nav" id="skills">
-        <nav id="navbar">
-          <ul>
-            <li class="nav-link"><a href="#home">HOME</a></li>
-            <li class="nav-link"><a href="#skills">SKILLS</a></li>
-            <li class="nav-link"><a href="#projects">PROJECTS</a></li>
-            <li class="nav-link"><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
+
         <!-- SKILLS -->
-        <section class="skills-container" id="skills">
-          <div class="skills-gradient-bg">
-            <div class="bio-container">
-              <h2 class="bio-header">Creative Solutions to Complex Problems</h2>
-              <h3 class="bio-sub-header">
-                I design desktop & mobile friendly websites for e-commerce
-                sites, small business services, personal projects, and
-                everything in between.
-              </h3>
-            </div>
-            <div class="tools-bg">
-              <div class="tools-container">
-                <h2 class="tools-header">TOOLS & TECHNOLOGIES</h2>
-                <div class="tools-icon-container">
-                  <div class="tool-icon">
-                    <img src="./img/icons/javascript.svg" alt="" srcset="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/css3.svg" alt="" srcset="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/sass.svg" alt="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/nodejs.svg" alt="" srcset="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/mongodb.png" alt="" srcset="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/sql.png" alt="" srcset="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/php.png" alt="" srcset="" />
-                  </div>
-                  <div class="tool-icon">
-                    <img src="./img/icons/html5.svg" alt="" srcset="" />
-                  </div>
-                </div>
-              </div>
-              <div class="tools-card-deck">
-                <div class="tools-card">
-                  <h3 class="tool-header">LIBRARIES/FRAMEWORKS</h3>
-                  <hr />
-                  <div class="tool-item">Bootstrap</div>
-                  <div class="tool-item">jQuery</div>
-                  <div class="tool-item">Express</div>
-                  <div class="tool-item">Mongoose</div>
-                  <div class="tool-item">EJS</div>
-                </div>
-                <div class="tools-card">
-                  <h3 class="tool-header">DEV TOOLS</h3>
-                  <hr />
-                  <div class="tool-item">Git/Github</div>
-                  <div class="tool-item">Gulp</div>
-                  <div class="tool-item">NPM/Yarn</div>
-                  <div class="tool-item">Figma</div>
-                  <div class="tool-item">VSCode</div>
-                </div>
-                <div class="tools-card">
-                  <h3 class="tool-header">CMS</h3>
-                  <hr />
-                  <div class="tool-item">Custom Wordpress</div>
-                  <div class="tool-item">Woocommerce</div>
-                  <div class="tool-item">Understrap</div>
-                  <div class="tool-item">Elementor</div>
-                  <div class="tool-item">Wix/Weebly</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
         <!-- PROJECTS -->
-        <section class="projects-container" id="projects">
-          <div class="nav-rect"></div>
-          <div class="projects-wrapper">
-            <h2 class="projects-header">My Recent Work</h2>
-            <div class="projects-card-deck">
-              <div class="projects-card top"></div>
-              <div class="projects-card top"></div>
-              <div class="projects-card"></div>
-              <div class="projects-card"></div>
-            </div>
-            <div class="projects-sub-header">
-              More on my
 
-              <a
-                class="ml1"
-                href="https://github.com/Dillonzellis"
-                target="_blank"
-                ><img
-                  src="./img/icons/GitHub-Mark-Light-64px.png"
-                  alt=""
-                  srcset=""
-              /></a>
-            </div>
-          </div>
-          <div class="projects-gradient"></div>
-        </section>
         <!-- CONTACT -->
-        <section class="contact-container" id="contact">
-          <div class="contact-vector">
-            <h2 class="contact-header">CONTACT</h2>
-            <h3 class="form-header">
-              Let's Build your passion and make it a reality!
-            </h3>
-
-            <form
-              class="contact-form"
-              action="https://formsubmit.co/0e618ea3ad46cce329d69e9596f8b4b3"
-              method="POST"
-            >
-              <div class="inputs-grid">
-                <div class="input-wrapper">
-                  <label for="" class="label-mb">Name</label>
-                  <input type="text" class="" name="name" />
-                </div>
-                <div class="input-wrapper">
-                  <label for="" class="label-mb">Email</label>
-                  <input type="email" name="email" id="" />
-                </div>
-                <div class="input-wrapper grid-col-span-2">
-                  <label for="" class="label-mb">Message</label>
-                  <textarea name="message" id="" class="" rows="5"></textarea>
-                </div>
-              </div>
-              <!-- <input
-                type="hidden"
-                name="_next"
-                value="localhost:3000/thankyou.html"
-              /> -->
-              <div class="btn-wrapper">
-                <button type="submit" class="btn">Let's Do This!</button>
-              </div>
-            </form>
-          </div>
-          <footer>
-            <div class="footer">
-              Created by Dillon Ellis &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              <!-- <a href="mailto:dillonzellis@gmail.com"
-                ><img src="./img/icons/mail.png" class="ml1" alt="" srcset=""
-              /></a> -->
-            </div>
-            <!-- Created by Dillon Ellis &copy; -->
-          </footer>
-        </section>
       </div>
     </main>
 
-    <!-- <script defer src="./dist/main.js"></script> -->
+    <footer>
+      <div class="footer">
+        Created by Dillon Ellis &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </footer>
+
     <script src="./dist/main.js"></script>
   </body>
 </html>
