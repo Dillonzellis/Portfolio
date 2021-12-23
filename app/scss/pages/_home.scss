@@ -11,7 +11,6 @@
   // align-items: center;
   // align-content: center;
 
-
   .name-container {
     font-family: $secondary-font;
     text-align: center;
@@ -19,15 +18,19 @@
     padding-top: 3rem;
     letter-spacing: 4px;
     z-index: 3;
+
     .heading {
       // margin-top: 1rem;
       font-size: 3rem;
       font-weight: 500;
+      font-style: italic;
     }
+
     .sub-heading {
       font-size: 1rem;
       font-weight: 300;
     }
+
     .icons-container {
       display: flex;
       align-content: center;
@@ -36,6 +39,7 @@
       margin-top: 0.5rem;
     }
   }
+
   .down-arrow {
     align-self: flex-end;
     margin-right: 1rem;
