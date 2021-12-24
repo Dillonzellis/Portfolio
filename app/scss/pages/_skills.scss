@@ -44,9 +44,15 @@
       .card-header {
         color: black;
         font-size: 1.25rem;
-        padding: 1.5rem;
+        padding: 1.5rem 0.2rem;
         font-weight: bold;
         letter-spacing: 0.1rem;
+        inline-size: 180px;
+        word-wrap: break-word;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
       }
       hr {
         width: 42px;

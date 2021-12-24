@@ -12,7 +12,7 @@
   // align-content: center;
 
   .name-container {
-    font-family: $secondary-font;
+    font-family: $primary-font;
     text-align: center;
     margin: auto;
     padding-top: 3rem;
@@ -21,9 +21,10 @@
 
     .heading {
       // margin-top: 1rem;
+      font-family: $secondary-font;
       font-size: 3rem;
       font-weight: 500;
-      font-style: italic;
+      // font-style: italic;
     }
 
     .sub-heading {
