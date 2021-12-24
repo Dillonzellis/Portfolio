@@ -50,3 +50,14 @@
     }
   }
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  background-color: $primary-color;
+  color: $tertiary-color;
+  // border-bottom: 2.5px solid #626262;
+  // border-top: 1px solid #626262;
+}
