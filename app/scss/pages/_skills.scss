@@ -4,6 +4,7 @@
     // min-height: 100%;
     background: linear-gradient(179.9deg, #252934 49.99%, #04c2c9 216.47%);
     border-radius: 26px 26px 0px 0px;
+    // background-position: bottom;
   }
   header {
     padding-top: 1rem;
@@ -64,6 +65,49 @@
         letter-spacing: 0.05rem;
         &:last-child {
           padding-bottom: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills {
+    // min-height: 100vh;
+    // position: relative;
+    .gradient {
+      // min-height: 100%;
+    }
+    header {
+      h2 {
+        font-size: 2.75rem;
+      }
+      p {
+        font-size: 1.25rem;
+        margin-bottom: 2.75rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        // padding-top: 2rem;
+      }
+    }
+    .skills__content-wrapper {
+      width: 80%;
+      margin: auto;
+      img {
+        margin-right: 1rem !important;
+        height: 70px;
+      }
+      .card-deck {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .card {
+          width: 300px;
+          min-height: 350px;
+          .card-header {
+            height: 25px;
+          }
         }
       }
     }
