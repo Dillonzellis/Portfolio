@@ -144,41 +144,49 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact" id="contact">
-        <h2 class="contact__header">Contact</h2>
-        <h3 class="form-header">
-          Let's build your passion and make it a reality!
-        </h3>
+      <div class="contact-vector">
+        <section class="contact" id="contact">
+          <h2 class="contact__header">Contact</h2>
+          <h3 class="form-header">
+            Let's build your passion and make it a reality!
+          </h3>
 
-        <form
-          class="contact-form"
-          action="https://formsubmit.co/0e618ea3ad46cce329d69e9596f8b4b3"
-          method="POST"
-        >
-          <div class="inputs-grid">
-            <div class="input-wrapper">
-              <label for="" class="label-mb">Name</label>
-              <input type="text" class="" name="name" />
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/0e618ea3ad46cce329d69e9596f8b4b3"
+            method="POST"
+          >
+            <div class="inputs-grid">
+              <div class="input-wrapper">
+                <label for="" class="label-mb">Name</label>
+                <input type="text" class="" name="name" placeholder="Name" />
+              </div>
+              <div class="input-wrapper">
+                <label for="" class="label-mb">Email</label>
+                <input type="email" name="email" id="" placeholder="Email" />
+              </div>
+              <div class="input-wrapper grid-col-span-2">
+                <label for="" class="label-mb">Message</label>
+                <textarea
+                  name="message"
+                  id=""
+                  class=""
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
             </div>
-            <div class="input-wrapper">
-              <label for="" class="label-mb">Email</label>
-              <input type="email" name="email" id="" />
+            <!-- <input
+              type="hidden"
+              name="_next"
+              value="localhost:3000/thankyou.html"
+            /> -->
+            <div class="btn-wrapper">
+              <button type="submit" class="btn">Let's Do This!</button>
             </div>
-            <div class="input-wrapper grid-col-span-2">
-              <label for="" class="label-mb">Message</label>
-              <textarea name="message" id="" class="" rows="5"></textarea>
-            </div>
-          </div>
-          <!-- <input
-            type="hidden"
-            name="_next"
-            value="localhost:3000/thankyou.html"
-          /> -->
-          <div class="btn-wrapper">
-            <button type="submit" class="btn">Let's Do This!</button>
-          </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -188,6 +196,7 @@
         </script>
       </div>
     </footer>
+
     <script src="./dist/main.js"></script>
   </body>
 </html>
