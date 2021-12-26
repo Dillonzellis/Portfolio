@@ -93,10 +93,13 @@
     .skills__content-wrapper {
       width: 80%;
       margin: auto;
-      img {
-        margin-right: 1rem !important;
-        height: 70px;
+      .icons-wrapper {
+        img {
+          margin-right: 1rem;
+          height: 70px;
+        }
       }
+
       .card-deck {
         margin-top: 1.5rem;
         display: flex;

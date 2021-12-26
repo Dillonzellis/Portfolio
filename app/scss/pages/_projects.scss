@@ -46,3 +46,32 @@
     }
   }
 }
+
+@media (min-width: 1000px) {
+  .projects {
+    // min-height: 80vh;
+    .projects__vector {
+      min-height: 100vh;
+      header {
+        .project__header {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+      }
+      .projects__container {
+        display: grid;
+        grid-template-columns: 362px 362px;
+        grid-gap: 3rem;
+        justify-items: center;
+        .project__card {
+          margin: 0;
+          border: 1px solid black;
+          width: 100%;
+        }
+      }
+      .projects__sub-header {
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
