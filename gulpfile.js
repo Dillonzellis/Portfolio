@@ -6,6 +6,8 @@ const terser = require("gulp-terser");
 const browsersync = require("browser-sync");
 const del = require("del");
 
+const concat = require("gulp-concat");
+
 // Sass Task
 function scssTask() {
   return src("app/scss/main.scss", { sourcemaps: true })
@@ -16,7 +18,8 @@ function scssTask() {
 
 // JS Task
 function jsTask() {
-  return src("app/js/main.js", { sourcemaps: true })
+  return src("app/js/**/*.js", { sourcemaps: true })
+    .pipe(concat("main.js"))
     .pipe(terser())
     .pipe(dest("dist", { sourcemaps: true }));
 }
