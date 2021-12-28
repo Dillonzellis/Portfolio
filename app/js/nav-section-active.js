@@ -3,8 +3,9 @@ const navlinks = document.querySelectorAll("a");
 const navbar = document.querySelector("nav");
 
 const options = {
-  threshold: 0.5,
+  // threshold: 0.5,
   // rootMargin: "-110px",
+  rootMargin: "-10px",
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -21,6 +22,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       const href = li.getAttribute("href").substring(1);
       if (href === current) {
         li.classList.add("active");
+        // console.log(current);
       }
       if (current !== "home") {
         console.log(`home`);

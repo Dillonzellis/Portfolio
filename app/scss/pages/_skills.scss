@@ -1,5 +1,6 @@
 .skills {
   padding-top: 2rem;
+  // word-wrap: break-word;
   .gradient {
     // min-height: 100%;
     background: linear-gradient(179.9deg, #252934 49.99%, #04c2c9 216.47%);
@@ -48,7 +49,7 @@
         padding: 1.5rem 0.2rem;
         font-weight: bold;
         letter-spacing: 0.1rem;
-        inline-size: 180px;
+        // inline-size: 180px;
         word-wrap: break-word;
         display: flex;
         align-items: center;

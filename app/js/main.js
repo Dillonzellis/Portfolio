@@ -17,4 +17,3 @@
 //     navbar.classList.remove("sticky");
 //   }
 // }
-console.log(testerino);
