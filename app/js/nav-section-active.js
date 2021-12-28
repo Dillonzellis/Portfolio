@@ -4,8 +4,8 @@ const navbar = document.querySelector("nav");
 
 const options = {
   // threshold: 0.5,
-  // rootMargin: "-110px",
-  rootMargin: "-10px",
+  rootMargin: "-110px",
+  // rootMargin: "-10px",
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
