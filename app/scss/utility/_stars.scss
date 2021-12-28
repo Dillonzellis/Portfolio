@@ -1,0 +1,65 @@
+.twinkling {
+  // background-image: url(../../../img/dots.png);
+  // background-size: cover;
+  // min-height: 100%;
+  // position: absolute;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  // width: 100%;
+  // min-height: 100%;
+  display: block;
+
+  background: transparent url(../../../img/dots.png) repeat top center;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+// twinkling stars
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .twinkling {
+    bottom: 500px;
+  }
+}

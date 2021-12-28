@@ -1,128 +1,127 @@
-.contact-container {
-  min-height: 100vh;
-  position: relative;
+.contact-vector {
+  background-image: url(../../../img/contact-bg.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.contact {
+  h2 {
+    margin-top: 2.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: $accent-color;
+    font-size: 2.25rem;
+    letter-spacing: 0.1rem;
+  }
+  h3 {
+    text-align: center;
+    color: $tertiary-color;
+    margin: 1rem;
+  }
+  form {
+    .inputs-grid {
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .input-wrapper {
+        margin: 0.25rem;
+        label {
+          color: $tertiary-color;
+          display: none;
+        }
+        ::placeholder {
+          font-family: $primary-font;
+        }
+      }
+    }
+
+    .btn-wrapper {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem;
+      padding-bottom: 2.5rem;
+      button {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  background-color: $primary-color;
+  color: $tertiary-color;
+  // border-bottom: 2.5px solid #626262;
+  // border-top: 1px solid #626262;
+}
+
+@media (min-width: 700px) {
   .contact-vector {
-    background-image: url(../../../img/contact-bg.png);
-    background-size: cover;
-    position: absolute;
-    // bottom: 0;
-    top: 150px;
-    width: 100%;
-    min-height: 84.5vh;
+    background-position: center 0;
+  }
+}
 
-    .contact-header {
-      font-family: $primary-font;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 48px;
-      line-height: 59px;
-      letter-spacing: 0.2em;
-      text-align: center;
-
-      margin-top: 5.5rem;
-
-      color: $accent-color;
+@media (min-width: 1000px) {
+  // min-height: 100vh;
+  .contact {
+    .contact__header {
+      font-size: 3.5rem;
+      padding-top: 12rem;
+      letter-spacing: 8px;
     }
     .form-header {
-      height: 29px;
-      margin-top: 9rem;
-      margin-bottom: 4.5rem;
-      font-family: $primary-font;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 29px;
-      letter-spacing: 0.06em;
-
-      text-align: center;
-
-      color: #f5f5f5;
+      font-size: 1.75rem;
+      margin-top: 8rem;
     }
-
     .contact-form {
-      width: 580px;
-
-      margin-left: auto;
-      margin-right: auto;
-
-      // justify-content: center;
-      // text-align: center;
-
-      // flex-direction: column;
-
+      width: 30%;
+      margin: auto;
       .inputs-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        // width: 750px;
-
+        column-gap: 5rem;
+        // justify-items: center;
         .input-wrapper {
           display: flex;
-          flex-direction: column;
-          .label-mb {
-            margin-bottom: 0.5rem;
+          margin-bottom: 1rem;
+
+          input {
+            width: 100%;
+            // padding: 0.5rem;
+            font-size: 1.25rem;
           }
         }
         .grid-col-span-2 {
           grid-column: span 2;
-        }
-        // input {
-        //   // width: 269px;
-        //   height: 1.5rem;
-        // }
-        input[type="text"] {
-          font-size: 1.25rem;
-          font-family: $primary-font;
-        }
-        input[type="email"] {
-          font-size: 1.25rem;
-          font-family: $primary-font;
-        }
-        textarea {
-          font-size: 1.25rem;
-          font-family: $primary-font;
-        }
-        label {
-          font-family: $primary-font;
-
-          font-style: normal;
-          font-weight: normal;
-          font-size: 1.25rem;
-          line-height: 20px;
-          /* identical to box height */
-
-          letter-spacing: 0.06em;
-
-          color: #f5f5f5;
+          textarea {
+            width: 100%;
+            font-size: 1.25rem;
+          }
         }
       }
       .btn-wrapper {
-        display: flex;
-        justify-content: center;
-        .btn {
-          // margin-right: auto;
-          // margin-left: auto;
-          margin-top: 2rem;
+        button {
+          font-size: 1.25rem;
         }
       }
     }
   }
-  footer {
-    z-index: 6;
-    color: white;
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    .footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .contact-vector {
+    background-position: center 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }

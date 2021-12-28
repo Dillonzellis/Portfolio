@@ -1,30 +1,19 @@
-const sections = document.querySelectorAll("section");
-const navlinks = document.querySelectorAll("a");
+// When the user scrolls the page, execute myFunction
+// window.onscroll = function () {
+//   myFunction();
+// };
 
-const options = {
-  threshold: 0.5,
-  rootMargin: "-150px",
-};
+// Get the navbar
+// var navbar = document.getElementById("navbar");
 
-const observer = new IntersectionObserver((entries, observer) => {
-  let current = "";
+// Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
 
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    }
-    current = entry.target.getAttribute("id");
-
-    navlinks.forEach((li) => {
-      li.classList.remove("active");
-      const href = li.getAttribute("href").substring(1);
-      if (href === current) {
-        li.classList.add("active");
-      }
-    });
-  });
-}, options);
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }

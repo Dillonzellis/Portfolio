@@ -1,11 +1,15 @@
 // Utility
-@import "./utility/normalize";
 @import "./utility/config.scss";
-@import "./utility/buttons.scss";
+@import "./utility/reset.scss";
 @import "./utility/nav.scss";
+@import "./utility/buttons.scss";
+@import "./utility/stars.scss";
 
 // Pages
 @import "./pages/home";
 @import "./pages/skills";
 @import "./pages/projects";
 @import "./pages/contact";
+
+// Responsive
+// @import "./utility/responsive.scss";
