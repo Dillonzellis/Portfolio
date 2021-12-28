@@ -2,41 +2,50 @@ const sections = document.querySelectorAll("section");
 const navlinks = document.querySelectorAll("a");
 const navbar = document.querySelector("nav");
 
-const options = {
-  // threshold: 0.5,
-  threshold: 0.8,
-  // rootMargin: "-110px",
-  // rootMargin: "-10px",
-};
 
-const observer = new IntersectionObserver((entries, observer) => {
-  let current = "";
 
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    }
-    current = entry.target.getAttribute("id");
+const newWidthThreshold = () => {
+  
+    const options = {
+      threshold: 0.4,
+    };
 
-    navlinks.forEach((li) => {
-      li.classList.remove("active");
-      const href = li.getAttribute("href").substring(1);
-      if (href === current) {
-        li.classList.add("active");
-        // console.log(current);
-      }
-      if (current !== "home") {
-        console.log(`home`);
-        navbar.classList.remove("hidden");
-      }
+    const observer2 = new IntersectionObserver((entries, observer) => {
+      let current = "";
 
-      if (current == "home") {
-        navbar.classList.add("hidden");
-      }
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        current = entry.target.getAttribute("id");
+
+        navlinks.forEach((li) => {
+          li.classList.remove("active");
+          const href = li.getAttribute("href").substring(1);
+          if (href === current) {
+            li.classList.add("active");
+            // console.log(current);
+          }
+          if (current !== "home") {
+            // console.log(`home`);
+            navbar.classList.remove("hidden");
+          }
+
+          if (current == "home") {
+            navbar.classList.add("hidden");
+          }
+        });
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer2.observe(section);
     });
-  });
-}, options);
+  }
 
-sections.forEach((section) => {
-  observer.observe(section);
-});
+
+newWidthThreshold();
+// logWidth();
+
+// window.addEventListener("resize", newWidthThreshold());
+// window.addEventListener("resize", logWidth);
