@@ -4,7 +4,8 @@ const navbar = document.querySelector("nav");
 
 const options = {
   // threshold: 0.5,
-  rootMargin: "-110px",
+  threshold: 0.8,
+  // rootMargin: "-110px",
   // rootMargin: "-10px",
 };
 

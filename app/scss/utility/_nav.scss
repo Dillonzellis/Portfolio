@@ -109,7 +109,12 @@
         font-weight: bold;
         font-size: 1.125rem;
         letter-spacing: 0.96px;
-        margin-right: 42px;
+        margin-right: 30px;
+        padding: 1rem;
+        &:hover {
+          background-color: #3c4557;
+          // color: $secondary-color;
+        }
       }
     }
   }
