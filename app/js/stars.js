@@ -22,6 +22,12 @@ const stars = () => {
     section.appendChild(star);
     i++;
   }
+  console.log("resized");
 };
 
 stars();
+
+// window.addEventListener("resize", stars());
+
+// window.addEventListener("resize", myFunction);
+

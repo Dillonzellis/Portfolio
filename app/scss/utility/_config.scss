@@ -21,6 +21,8 @@ $secondary-font: "Amita", cursive;
 
 // Helper
 // Margins
+
+//right
 .mr1 {
   margin-right: 1rem;
 }
@@ -28,8 +30,25 @@ $secondary-font: "Amita", cursive;
   margin-right: 2rem;
 }
 
+//left
 .ml1 {
   margin-left: 1rem;
+}
+
+//bottom
+.mb1 {
+  margin-bottom: 1rem;
+}
+.mb2 {
+  margin-bottom: 2rem !important;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mt2 {
+  margin-top: 2rem!important;
 }
 
 //Padding
