@@ -26,26 +26,35 @@
     .project__card {
       height: 300px;
       width: 300px;
-      background-color: grey;
-      transition: 0.6s;
+      position: relative;
+      background-color: $primary-color;
+      border: 3.5px solid #626262;
       &:hover {
-        background-color: $primary-color;
+        .gif-wrapper {
+          opacity: 0;
+          visibility: hidden;
+        }
       }
-      // background-color: grey;
+      .gif-wrapper {
+        position: absolute;
+        top: 0;
+        transition: 0.6s;
+        img {
+          object-fit: cover;
+          height: 300px;
+          width: 300px;
+        }
+      }
       margin: 1rem;
       .card-content-wrapper {
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        // background-color: $primary-color;
-        opacity: 0;
         padding: 0.75rem;
         text-align: center;
         transition: 0.6s;
-        &:hover {
-          opacity: 1;
-        }
+
         .site-title {
           color: white;
           font-size: 1.25rem;
@@ -115,6 +124,11 @@
       }
       .projects__sub-header {
         margin-top: 0.8rem;
+      }
+    }
+    .gif-wrapper {
+      img {
+        width: 362px !important;
       }
     }
   }
