@@ -100,6 +100,16 @@
   }
 }
 
+@media (max-width: 335px) {
+  .projects {
+    .gif-wrapper {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (min-width: 1000px) {
   .projects {
     // min-height: 80vh;
