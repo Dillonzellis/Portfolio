@@ -4,9 +4,25 @@ const postcss = require("gulp-postcss");
 const cssnano = require("cssnano");
 const terser = require("gulp-terser");
 const browsersync = require("browser-sync");
+const htmlmin = require("gulp-htmlmin");
 const del = require("del");
 
 const concat = require("gulp-concat");
+
+// Minify Html
+function htmlTask() {
+  return src("*.html")
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true,
+        removeComments: true,
+        minifyCSS: true,
+        minifyURLs: true,
+        removeAttributeQuotes: true,
+      })
+    )
+    .pipe(dest("dist"));
+}
 
 // Sass Task
 function scssTask() {
@@ -22,6 +38,16 @@ function jsTask() {
     .pipe(concat("main.js"))
     .pipe(terser())
     .pipe(dest("dist", { sourcemaps: true }));
+}
+
+// Dist img
+function distImg() {
+  return src("./img/**/*").pipe(dest("dist/img"));
+}
+
+// Dist resume
+function distResume() {
+  return src("./*.pdf").pipe(dest("dist"));
 }
 
 // Browsersync Tasks
@@ -53,7 +79,26 @@ function cleanDist() {
   return del("./dist");
 }
 
+// Dist
+
+// cleanDist
+// htmlTask
+// scssTask,
+// jsTask,
+
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browsersyncServer, watchTask);
 
+exports.dist = series(
+  cleanDist,
+  distImg,
+  distResume,
+  htmlTask,
+  scssTask,
+  jsTask
+);
+
 exports.cleanDist = cleanDist;
+exports.htmlTask = htmlTask;
+exports.img = distImg;
+exports.resume = distResume;
