@@ -54,7 +54,7 @@ function distResume() {
 function browsersyncServer(cb) {
   browsersync.init({
     server: {
-      baseDir: ".",
+      baseDir: "./dist",
     },
   });
   cb();
